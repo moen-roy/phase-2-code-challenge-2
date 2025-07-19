@@ -1,0 +1,54 @@
+body{
+
+         background: url("https://cdn.vectorstock.com/i/1000v/42/73/dark-blue-background-seamless-pattern-with-black-vector-39404273.jpg");
+
+ 
+}
+#goalForm{
+    padding: 50px;
+    margin: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #7d7e64;
+    flex-direction: column;
+    font-size:x-large;
+    color: yellow;
+        background:url("https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/black/47_-_black.jpg");
+    background-repeat: none; 
+    background-size:contain;  
+    font-weight: bolder;
+}
+input{  
+
+     color: white;
+    font-weight: bolder;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    border:solid 1px, red;
+    font-size: large;
+    background: none;
+}
+#goalForm input::placeholder{
+    color: cyan;
+    font-size:large;
+    font-weight: bolder;
+
+}
+#goalForm input:hover::placeholder{
+    color: red ;
+}
+#goalButton{
+    padding: 10px;
+    background: orangered;
+    border-radius: 15px;
+    margin: 10px;
+
+}
+#goalButton:hover{
+    padding: 7px;
+    background: greenyellow;
+}
