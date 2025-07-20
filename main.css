@@ -3,6 +3,7 @@ body{
   background: url("https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg?semt=ais_hybrid&w=740");
     /* background-repeat: no-repeat; */
     background-size: contain;
+    background-color: black;
   color: wheat;
 }
 #goalForm{
@@ -73,20 +74,26 @@ display: flex;
 }
 h1{
     color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 h3{
     color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6); /* improves readability */
 }
 span{
     color:cyan;
-    background: black;  
- 
+   background-color: rgba(0, 0, 0, 0.6); /* improves readability */
 }
 #dataView{
   margin: -10px;
   margin-bottom: 50px;
   padding: 100px;
-  background-color: rgba(0, 0, 0, 0.6); /* optional: improves readability */
+  background-color: rgba(0, 0, 0, 0.6); /* improves readability */
   border-radius: 10px;
   color: wheat;
   display:flex;
