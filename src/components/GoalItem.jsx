@@ -23,18 +23,33 @@ function GoalView() {
                     <p><span>It's in the category of:</span> {goal.category}</p>
                     <p><span>Your deadline is:</span> {goal.deadline}</p>
                     <p><span>It was created on:</span> {goal.createdAt}</p>
-                    {/* <GoalEdit goalId= {goal.id} /> */}
+                    <GoalEdit goalId= {goal.id} />
                      </li>
                     </ul>
                 </div>
                )
             }
             )}
-        
+        </div>
+
+    )
+}
+function GoalEdit({goalId}){
+    function finalDelete(){
+   fetch(`http://localhost:3001/goals/${goalId}`, {
+      method: "DELETE",
+    })
+        .then(()=>{
+            alert("Successfull delete");
+            window.location.reload()        
+    })
+    .catch((err)=> console.log("Delete failure",err))
+    };
+
+    return(
         <div>
             <button id= "delete" onClick={finalDelete}>Delete</button>
         </div>
-        </div>
-    )
+    );
 }
 export default GoalView;
