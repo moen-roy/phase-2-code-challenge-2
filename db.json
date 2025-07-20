@@ -2,8 +2,8 @@
   "goals": [
     {
       "id": "1",
-      "name": "Travel Fund - Japan",
-      "targetAmount": 5000,
+      "name": "Travel Fund - Kenya",
+      "targetAmount": "1000",
       "savedAmount": 3200,
       "category": "Travel",
       "deadline": "2025-12-31",
@@ -21,7 +21,7 @@
     {
       "id": "3",
       "name": "New Laptop",
-      "targetAmount": 1500,
+      "targetAmount": "15000",
       "savedAmount": 1500,
       "category": "Electronics",
       "deadline": "2024-07-20",
@@ -38,7 +38,7 @@
     },
     {
       "id": "5",
-      "name": "Car Maintenance",
+      "name": "Car puchase",
       "targetAmount": 800,
       "savedAmount": 600,
       "category": "Vehicle",
