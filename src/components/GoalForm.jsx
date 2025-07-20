@@ -62,8 +62,7 @@ function GoalForm(){
                 <input type="text" placeholder="sample: 2023-12-31" onChange={(e)=> setDeadline(e.target.value)} />                
             </div>            
               <button id="goalButton" onClick={Insertion} >Add +</button>
-        </div>
-            <GoalView />
+        </div>           
         </div>
         
         

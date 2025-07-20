@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Edit from './GoalList';
 
 function GoalView() {
     const [goals, setGoals]= useState([]);
@@ -11,19 +12,21 @@ function GoalView() {
   }, []);
     return(
         <div id= "dataView">
-            <h1>Your goals!</h1>
+            <h1>Your set goals!</h1>
             {goals.map((goal)=>{
                return (
                  <div key= {goal.id} id="dataView">
                    <ul>
                         <li>                                                   
                     <h3>{goal.name} </h3>                  
-                    <p><span>You targeted:</span> {goal.targetAmount} </p>
-                    <p><span>Your savings:</span> {goal.savedAmount} </p>
+                    <p><span>You targeted:</span> KES {goal.targetAmount.toLocaleString()} </p>
+                    <p><span>Your savings:</span> KES {goal.savedAmount.toLocaleString()} </p>
                     <p><span>It's in the category of:</span> {goal.category}</p>
                     <p><span>Your deadline is:</span> {goal.deadline}</p>
                     <p><span>It was created on:</span> {goal.createdAt}</p>
-                    <GoalEdit goalId= {goal.id} />
+                    <GoalDelete goalId= {goal.id} />
+
+                    <Edit goal={goal} />
                      </li>
                     </ul>
                 </div>
@@ -34,7 +37,7 @@ function GoalView() {
 
     )
 }
-function GoalEdit({goalId}){
+function GoalDelete({goalId}){
     function finalDelete(){
    fetch(`http://localhost:3001/goals/${goalId}`, {
       method: "DELETE",
@@ -44,7 +47,7 @@ function GoalEdit({goalId}){
             window.location.reload()        
     })
     .catch((err)=> console.log("Delete failure",err))
-    };
+    }; 
 
     return(
         <div>

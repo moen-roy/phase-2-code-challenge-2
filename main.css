@@ -63,6 +63,14 @@ button:hover{
  margin-top: -164px;
    
 }
+#eddit{
+display: flex;
+ margin-left: 400px;
+ 
+}
+#edditInput{
+    margin: 70px;
+}
 h1{
     color: red;
 }
