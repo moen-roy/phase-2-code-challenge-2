@@ -1,24 +1,28 @@
 body{
 
-  background: url("https://cdn.vectorstock.com/i/1000v/42/73/dark-blue-background-seamless-pattern-with-black-vector-39404273.jpg");
- 
+  background: url("https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1409.jpg?semt=ais_hybrid&w=740");
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+  color: wheat;
 }
 #goalForm{
-    padding: 50px;
+     display: block;
+    padding: 20px;
     margin: 5%;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 360px;
+    margin-right: 409px;
     display:flex;
     align-items: center;
     justify-content: center;
-    border: solid 2px #7d7e64;
+    border: dotted 2px #7d7e64;
     flex-direction: column;
     font-size:x-large;
     color: yellow;
-        background:url("https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/black/47_-_black.jpg");
+    background:url("https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/black/47_-_black.jpg");
     background-repeat: no-repeat; 
     background-size:contain;  
     font-weight: bolder;
+   
 }
 input{  
 
@@ -58,4 +62,28 @@ button:hover{
  margin-left: 400px;
  margin-top: -164px;
    
+}
+h1{
+    color: red;
+}
+h3{
+    color: green;
+}
+span{
+    color:cyan;
+    background: black;  
+ 
+}
+#dataView{
+  margin: -10px;
+  margin-bottom: 50px;
+  padding: 100px;
+  background-color: rgba(0, 0, 0, 0.6); /* optional: improves readability */
+  border-radius: 10px;
+  color: wheat;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.2rem;
 }
