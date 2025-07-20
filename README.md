@@ -1,12 +1,66 @@
-# React + Vite
+# Goal Planner App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application for managing and tracking savings goals. Users can add, view, edit, and delete goals, with data persisted via a local JSON server.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add new savings goals with (name, target amount,   category, and deadline)
+- View all goals with details including savings progress.
+-Includes creation date and deadline for the goal
+- Edit existing goals inline.
+- Delete goals.
+- Responsive and styled UI.
 
-## Expanding the ESLint configuration
+##  Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (Frontend)
+- JSON Server (Mock backend for API)
+- CSS for styling
+## Getting Started
+
+### Project Structure
+bash
+Copy code
+phase-2-code-challenge-2/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── GoalForm.js       # Form to add new goals
+│   │   ├── GoalItem.js       # Displays goal details and delete
+│   │   ├── GoalList.js       # Edit component (also handles updates)
+│   │
+│   ├── App.js                # no-content
+│   ├── index.js              # Entry point
+│   └── styles.css            # App styling
+│
+├── db.json                  # Mock API data
+├── package.json
+
+### Prerequisites
+
+- Node.js (https://nodejs.org/) and npm installed
+- [JSON Server](https://github.com/typicode/json-server) for local API
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone <repo-url>
+   cd phase-2-code-challenge-2
+   run npm install
+2. Start the sever by runing 'npm run dev'
+3. Start the backend (db.json)by runing:
+      npm install -g json-server
+        -to install globally the server
+    then run:
+     json-server --watch db.json --port 3001 npm run dev
+# note
+ -Both front-end and backend severs mus be running 
+ -Page reloads (window.location.reload()) are currently used after edits; future versions can use state updates for smoother UX
+  
+# Feedback
+Contributions, feedback, or suggestions are welcome. Open an issue or submit a pull request.
+# License
+This project is licensed under the MIT License.
