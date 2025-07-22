@@ -21,7 +21,7 @@ body{
     color: yellow;
     background:url("https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/black/47_-_black.jpg");
     background-repeat: no-repeat; 
-    background-size:contain;  
+    background-size:cover ;  
     font-weight: bolder;
    
 }
@@ -80,10 +80,7 @@ h1{
 }
 h3{
     color: green;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.6); /* improves readability */
+   
 }
 span{
     color:cyan;

@@ -19,8 +19,8 @@ function GoalView() {
                    <ul>
                         <li>                                                   
                     <h3>{goal.name} </h3>                  
-                    <p><span>You targeted:</span> KES {goal.targetAmount.toLocaleString()} </p>
-                    <p><span>Your savings:</span> KES {goal.savedAmount.toLocaleString()} </p>
+                    <p><span>You targeted:</span> $ {goal.targetAmount.toLocaleString()} </p>
+                    <p><span>Your savings:</span> $ {goal.savedAmount.toLocaleString()} </p>
                     <p><span>It's in the category of:</span> {goal.category}</p>
                     <p><span>Your deadline is:</span> {goal.deadline}</p>
                     <p><span>It was created on:</span> {goal.createdAt}</p>

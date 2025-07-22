@@ -4,6 +4,7 @@ import GoalView from "./GoalItem";
 function GoalForm(){
   const [name, setName] = useState("");
   const [targetAmount, setTargetAmount] = useState("");
+  const [savingsAmount, setSavingsAmount] = useState("");
   const [category, setCategory] = useState("");
   const [deadline, setDeadline] = useState("");
 
@@ -16,6 +17,7 @@ function GoalForm(){
         const newGoal = {
       name,
       targetAmount,
+      savingsAmount,
       category,
       deadline,
       savedAmount: 0,
@@ -52,6 +54,10 @@ function GoalForm(){
             <div id= "goalTarget">
                 <label>Target Ammount </label>
                 <input type="number" placeholder="Enter your target amount here!" onChange= {(e)=> setTargetAmount(e.target.value)} />
+            </div>
+            <div id= "goalSavings">
+                <label>Savings Ammount </label>
+                <input type="number" placeholder="Enter the amount to save today" onChange= {(e)=> setSavingsAmount(e.target.value)} />
             </div>
             <div id= "goalCategory">
                 <label>Category </label>
